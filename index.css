@@ -1,0 +1,620 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ── NAVBAR ── */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2% 3%;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.intro_wst {
+    display: flex;
+    gap: 2.2%;
+}
+
+.intro_wst p {
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.intro_wst p:hover {
+    color: #0b5d2a;
+}
+
+.intro_limn {
+    display: flex;
+    align-items: center;
+    gap: 0.9%;
+}
+
+.toogle {
+    display: none;
+}
+
+/* ── HERO ── */
+.annonce {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0b5d2a;
+    padding: 3.7% 4.4% 0 4.4%;
+    overflow: hidden;
+    min-height: 20%;
+}
+
+.gauche {
+    color: white;
+    max-width: 28%;
+}
+
+.gauche h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1%;
+}
+
+.gauche p {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 1.9%;
+    opacity: 0.9;
+}
+
+.gauche .prem {
+    background: #fff;
+    color: #0b5d2a;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0.9% 1.9%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+.droite {
+    align-self: flex-end;
+}
+
+.droite .dele {
+    width: 30%;
+    display: block;
+}
+
+/* ── SECTION HEADINGS ── */
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 2.6% 0 1.5% 3%;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    font-size: 13px;
+    font-weight: 400;
+    text-align: right;
+    color: #ccc;
+    margin: 2.6% 3% 0.3% 0;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 1.5% 3%;
+    letter-spacing: 0.5px;
+}
+
+/* ── CATEGORY ── */
+.Category {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.cat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.name:hover {
+    color: #0B6434;
+}
+
+.categories {
+    gap: 6px;
+    text-align: center;
+}
+
+.categories img:hover {
+    transform: translateY(-0.5%);
+}
+
+.Dots {
+    display: block;
+    margin: 1.2% auto 0;
+}
+
+/* ════════════════════════════════════
+   FEATURED PRODUCTS
+════════════════════════════════════ */
+.show {
+    display: flex;
+    gap: 1.5%;
+    padding: 0 3%;
+    align-items: stretch;
+}
+
+/* ── LEFT — yellow big banner ── */
+.Sale_left {
+    flex: 0.6;
+    min-height: 23%;
+    background-color: #C8A938;
+    border-radius: 16px;
+    padding: 2.2% 1.8% 0 1.8%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Sale_left h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 0.4% 0;
+    text-align: center;
+}
+
+.Sale_left h6 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.Sale_left .show1 {
+    width: 100%;
+    object-fit: contain;
+    margin-top: 2.2%;
+}
+
+/* ── RIGHT COLUMN ── */
+.Sale_right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Top-right — salmon/pink */
+.Sale_right_fo9 {
+    flex: 1;
+    background-color: #F28B82;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Sale_right_fo9 .lisr .im {
+    width: 16%;
+    object-fit: contain;
+    display: block;
+}
+
+.Sale_right_fo9 .limn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1.8% 2% 1.8% 0.7%;
+    gap: 0.9%;
+}
+
+.Sale_right_fo9 .limn p:first-child {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.Sale_right_fo9 .limn span {
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.limn .shoping {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+/* Bottom-right — orange */
+.Sale_right_tht {
+    flex: 1;
+    background-color: #FF9564;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.Sale_right_tht .G {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.8% 0 1.8% 2%;
+}
+
+.Sale_right_tht .G .up {
+    width: 11.7%;
+    object-fit: contain;
+}
+
+.Sale_right_tht .G p {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 0.6%;
+}
+
+.Sale_right_tht .D {
+    align-self: flex-end;
+}
+
+.Sale_right_tht .D .glasses {
+    width: 19%;
+    object-fit: contain;
+    display: block;
+}
+
+/* ── ALL PRODUCTS ── */
+.all_products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 3% 3%;
+}
+
+.product_card {
+    border: 1px solid #0B6434;
+    border-radius: 8px;
+    padding: 20px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+}
+
+.product_card img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.product_name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.product_quantity {
+    font-size: 12px;
+    color: #888;
+}
+
+.product_price {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.payement {
+    background: #0B6434;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 6px;
+    width: 100%;
+}
+
+.payement:hover {
+    background: #094a22;
+}
+
+/* ── FOOTER ── */
+.end {
+    display: flex;
+    justify-content: space-between;
+    background-color: #8fbc8f;
+    padding: 30px 60px;
+    margin-top: 40px;
+}
+
+.end_col h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 14px 0;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.end_col p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.end_col p:hover {
+    text-decoration: underline;
+}
+
+/* ════════════════════════════════════
+   MOBILE — max-width: 768px
+════════════════════════════════════ */
+@media (max-width: 768px) {
+
+    /* ── NAVBAR ── */
+    .intro {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 14px 20px;
+    }
+
+    .toogle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #0b5d2a;
+    }
+
+    .intro_wst {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #fff;
+        padding: 16px 20px;
+        border-bottom: 1px solid #eee;
+        z-index: 999;
+        gap: 16px;
+    }
+
+    .intro_wst.apparait {
+        display: flex;
+    }
+
+    .intro_limn {
+        gap: 10px;
+    }
+
+    /* ── HERO ── */
+    .annonce {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 20px 0 20px;
+        height: auto;
+    }
+
+    .gauche {
+        max-width: 100%;
+    }
+
+    .gauche h1 {
+        font-size: 22px;
+    }
+
+    .gauche .prem {
+        font-size: 13px;
+        padding: 10px 20px;
+        margin-bottom: 24px;
+    }
+
+    .droite {
+        width: 100%;
+        text-align: center;
+    }
+
+    .droite .dele {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* ── HEADINGS ── */
+    h2, h4 {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    h3 {
+        font-size: 13px;
+        margin-right: 20px;
+    }
+
+    /* ── CATEGORY ── */
+    .cat {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 0 20px;
+        justify-content: center;
+    }
+
+    .categories img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .name {
+        font-size: 11px;
+    }
+
+    /* ── FEATURED PRODUCTS ── */
+    .show {
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 16px;
+    }
+
+    .Sale_left {
+        flex: none;
+        width: 100%;
+        min-height: 260px;
+        padding: 24px 20px 0 20px;
+    }
+
+    .Sale_left h5 {
+        font-size: 13px;
+    }
+
+    .Sale_left h6 {
+        font-size: 32px;
+    }
+
+    .Sale_right {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .Sale_right_fo9 {
+        width: 100%;
+        min-height: 140px;
+    }
+
+    .Sale_right_fo9 .lisr .im {
+        width: 120px;
+        height: 120px;
+    }
+
+    .Sale_right_fo9 .limn p {
+        font-size: 13px;
+    }
+
+    .Sale_right_fo9 .limn span {
+        font-size: 18px;
+    }
+
+    .limn .shoping {
+        font-size: 11px;
+        padding: 7px 14px;
+    }
+
+    .Sale_right_tht {
+        width: 100%;
+        min-height: 140px;
+    }
+
+    .Sale_right_tht .G .up {
+        width: 120px;
+    }
+
+    .Sale_right_tht .D .glasses {
+        width: 140px;
+    }
+
+    /* ── ALL PRODUCTS ── */
+    .all_products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 0 20px 30px;
+    }
+
+    .product_card {
+        border-radius: 8px;
+        padding: 12px;
+    }
+
+    .product_card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .product_name {
+        font-size: 12px;
+    }
+
+    .product_quantity {
+        font-size: 11px;
+    }
+
+    .product_price {
+        font-size: 12px;
+    }
+
+    .payement {
+        font-size: 11px;
+        padding: 7px 0;
+    }
+
+    /* ── FOOTER ── */
+    .end {
+        flex-direction: column;
+        gap: 24px;
+        padding: 30px 20px;
+        margin-top: 24px;
+    }
+
+    .end_col h4 {
+        font-size: 14px;
+        margin: 0 0 10px 0;
+        text-align: left;
+    }
+
+    .end_col p {
+        font-size: 13px;
+        margin-bottom: 6px;
+        text-align: left;
+    }
+}
