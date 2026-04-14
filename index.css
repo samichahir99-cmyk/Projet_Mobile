@@ -87,6 +87,11 @@ body {
     letter-spacing: 0.5px;
 }
 
+.gauche .prem:hover {
+    background: #C6EAD7;
+    color: white;
+}
+
 .droite {
     align-self: flex-end;
 }
